@@ -9,7 +9,7 @@
 
         <h1>{{ post.title }}</h1>
 
-        <p class="post-meta">Опубликовано: {{ post.timestamp.strftime('%d-%m-%Y в %H:%M') }}</p>
+        <p class="post-meta">Опубликовано: {{ post.timestamp.strftime('%d-%m-%Y %H:%M') }}</p>
 
         {% if content %}
             <div class="post-content">
