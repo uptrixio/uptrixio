@@ -2,14 +2,24 @@
 
 {% block content %}
     <article class="post-full">
-
         {% if post.image_filename %}
             <img src="{{ url_for('static', filename='uploads/posts/' + post.image_filename) }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; margin-bottom: 1.5em; border-radius: 5px;">
         {% endif %}
 
         <h1>{{ post.title }}</h1>
 
-        <p class="post-meta">Опубликовано: {{ post.timestamp.strftime('%d-%m-%Y %H:%M') }}</p>
+        <div class="post-meta-extra">
+            <span class="post-meta">Опубликовано: {{ post.timestamp.strftime('%d-%m-%Y %H:%M') }}</span>
+            <span class="post-stats">
+                <span class="stat-item views-count" title="Просмотры">
+                    👁️ {{ post.views or 0 }}
+                </span>
+                <span class="stat-item likes-count" title="Лайки">
+                    <button class="like-button" data-post-id="{{ post.id }}" aria-label="Поставить лайк">❤️</button>
+                    <span class="like-number">{{ post.likes or 0 }}</span>
+                </span>
+            </span>
+        </div>
 
         {% if content %}
             <div class="post-content">
