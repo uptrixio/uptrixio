@@ -1,8 +1,8 @@
-import os
 import time
 
 from flask import Flask, render_template, session, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 from flask_wtf.csrf import CSRFProtect
 from flask_login import LoginManager, login_required
 
@@ -11,7 +11,9 @@ from config import Config
 from datetime import datetime
 
 db = SQLAlchemy()
+migrate = Migrate()
 csrf = CSRFProtect()
+
 login = LoginManager()
 login.login_view = 'auth.request_otp'
 login.login_message = 'Необходимо подтверждение через Telegram для доступа к этой странице.'
@@ -21,6 +23,7 @@ def create_app(config_class=Config):
     app.config.from_object(config_class)
 
     db.init_app(app)
+    migrate.init_app(app, db)
     csrf.init_app(app)
     login.init_app(app)
 
@@ -32,7 +35,6 @@ def create_app(config_class=Config):
 
     from .routes.admin import bp as admin_bp
     app.register_blueprint(admin_bp, url_prefix='/admin')
-
 
     from . import models
 
