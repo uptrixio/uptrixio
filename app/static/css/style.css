@@ -394,22 +394,46 @@ button, input[type="submit"], a {
     html {
         font-size: 15px;
     }
+    body {
+        line-height: 1.65;
+    }
     .header {
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
+        padding: 0.8rem 1rem;
     }
     .logo {
         max-width: 120px;
     }
     .main-nav ul li {
-        margin: 0 0.5rem;
+        margin: 0 0.4rem;
+    }
+
+    .main-nav ul li a {
+         padding: 0.4rem 0.6rem;
     }
     .content {
+        padding: 0 1rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
+
+    .page-title {
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: 1.2em;
+    }
+
+    h1:not(.page-title) {
+        margin-top: 1.8em;
+    }
+
     h1 { font-size: 1.8rem; }
     h2 { font-size: 1.5rem; }
+
+    .post-preview {
+        margin-bottom: 2.5em;
+        padding-bottom: 1.5em;
+    }
+
     .share {
         width: 45px;
         height: 45px;
@@ -417,30 +441,44 @@ button, input[type="submit"], a {
     .share-logo {
         width: 55%;
     }
+
     pre {
         font-size: 0.85rem;
+        padding: 1em 0.8em;
+    }
+    code {
+        font-size: 0.85em;
     }
 }
 
-/* Очень маленькие экраны */
 @media (max-width: 480px) {
     .header {
-        padding: 0.5rem 0.8rem;
+        padding: 0.6rem 1rem;
     }
     .logo {
         max-width: 100px;
     }
     .main-nav {
-        padding: 0.4rem 0.8rem;
+        padding: 0.4rem 0.5rem;
     }
      .main-nav ul li a {
         font-size: 0.9rem;
+        padding: 0.3rem 0.4rem;
     }
     .content {
         margin-top: 1rem;
         margin-bottom: 1rem;
-        padding: 0 0.8rem;
+        padding: 0 1rem;
     }
+
+    .page-title {
+        margin-top: 1.2em;
+        margin-bottom: 1em;
+    }
+    h1:not(.page-title) {
+        margin-top: 1.5em;
+    }
+
     h1 { font-size: 1.6rem; }
     h2 { font-size: 1.3rem; }
 
@@ -450,6 +488,10 @@ button, input[type="submit"], a {
     textarea,
     button, input[type="submit"] {
         font-size: 0.95rem;
-        padding: 0.7em 1.2em;
+        padding: 0.7em 1.0em;
+    }
+
+     .post-preview {
+        margin-bottom: 2em;
     }
 }
