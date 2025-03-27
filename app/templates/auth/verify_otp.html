@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Подтверждение входа</h1>
+    <p>Пожалуйста, введите код, отправленный в ваш Telegram.</p>
+
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }} {# CSRF токен #}
+        <p>
+            {{ form.otp.label }}<br>
+            {{ form.otp(size=10, autofocus=True, inputmode="numeric", pattern="[0-9]*", autocomplete="one-time-code") }}<br>
+            {% for error in form.otp.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    <p><small>Не получили код? Возможно, нужно немного подождать или <a href="{{ url_for('auth.request_otp') }}">запросить снова</a> (текущий код станет недействительным).</small></p>
+{% endblock %}

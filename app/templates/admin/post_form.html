@@ -1,0 +1,39 @@
+{% extends "admin/base_admin.html" %}
+
+{% block admin_content %}
+    <h3>{{ legend }}</h3>
+
+    <form method="POST" action="" enctype="multipart/form-data" novalidate>
+        {{ form.hidden_tag() }} {# CSRF токен #}
+        <p>
+            {{ form.title.label }}<br>
+            {{ form.title(size=60) }}<br>
+            {% for error in form.title.errors %}
+                <span style="color: red;">[{{ error }}]</span><br>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.markdown_content.label }} (Поддерживается Markdown)<br>
+            {{ form.markdown_content(rows=20) }}<br>
+            {% for error in form.markdown_content.errors %}
+                <span style="color: red;">[{{ error }}]</span><br>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.post_image.label }}<br>
+            {{ form.post_image() }}<br>
+            {% for error in form.post_image.errors %}
+                <span style="color: red;">[{{ error }}]</span><br>
+            {% endfor %}
+            {% if current_image %}
+                <p>Текущее изображение: <br>
+                <img src="{{ url_for('static', filename='uploads/posts/' + current_image) }}" style="max-width: 200px; margin-top: 5px;">
+                <br><small>(Загрузка нового файла заменит текущее изображение)</small></p>
+            {% endif %}
+        </p>
+        <p>
+            {{ form.submit() }}
+            <a href="{{ url_for('admin.list_posts') }}" style="margin-left: 10px;">Отмена</a>
+        </p>
+    </form>
+{% endblock %}

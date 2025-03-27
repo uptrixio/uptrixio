@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Последние записи</h1>
+    {% if posts %}
+        {% for post in posts %}
+            <article class="post-preview">
+                <h2><a href="{{ url_for('main.view_post', slug=post.slug) }}" class="post-title">{{ post.title }}</a></h2>
+                <p class="post-meta">Опубликовано: {{ post.timestamp.strftime('%d-%m-%Y %H:%M') }}</p>
+
+                {% if post.preview_html %}
+                    <div class="post-preview-content">
+                        {{ post.preview_html | safe }}
+                    </div>
+                {% endif %}
+
+                <p style="clear: both; margin-top: 1em;">
+                    <a href="{{ url_for('main.view_post', slug=post.slug) }}">Читать дальше =></a>
+                </p>
+
+            </article>
+        {% endfor %}
+    {% else %}
+        <p>Пока здесь нет ни одной записи.</p>
+    {% endif %}
+{% endblock %}

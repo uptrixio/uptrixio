@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <article class="post-full">
+
+        {% if post.image_filename %}
+            <img src="{{ url_for('static', filename='uploads/posts/' + post.image_filename) }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; margin-bottom: 1.5em; border-radius: 5px;">
+        {% endif %}
+
+        <h1>{{ post.title }}</h1>
+
+        <p class="post-meta">Опубликовано: {{ post.timestamp.strftime('%d-%m-%Y %H:%M') }}</p>
+
+        {% if content %}
+            <div class="post-content">
+                {{ content|safe }}
+            </div>
+        {% endif %}
+
+        <hr>
+        <a href="{{ url_for('main.index') }}">Назад ко всем записям =></a>
+    </article>
+{% endblock %}

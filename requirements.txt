@@ -1,0 +1,8 @@
+Flask
+Flask-SQLAlchemy
+Flask-WTF
+Flask-Login
+python-dotenv
+Werkzeug
+Markdown
+python-telegram-bot

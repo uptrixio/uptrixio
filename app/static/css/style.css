@@ -1,0 +1,455 @@
+@font-face {
+    src: url("../font/JetBrainsMono-Bold.ttf") format("truetype");
+    font-family: "JetBrains";
+    font-weight: bold;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #222;
+}
+
+.header-logo-link {
+    display: inline-block;
+    line-height: 0;
+}
+
+.logo {
+    display: block;
+    max-width: 150px;
+    height: auto;
+}
+
+.main-nav {
+    background-color: #111;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 0.75rem;
+}
+
+.main-nav ul li a {
+    font-family: "JetBrains", monospace;
+    font-weight: bold;
+    color: #ccc;
+    text-decoration: none;
+    padding: 0.3rem 0;
+    transition: color 0.2s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.content {
+    width: 100%;
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex-grow: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "JetBrains", monospace;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    line-height: 1.3;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+
+p {
+    margin-bottom: 1.2em;
+}
+
+a {
+    font-family: "JetBrains", monospace;
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 0.2em 0;
+    color: #fff;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #7e7e7e;
+}
+
+strong, b { font-weight: bold; color: #fff; }
+em, i { font-style: italic; color: #eee; }
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #333;
+    margin: 2.5rem 0;
+}
+
+.post-preview {
+    margin-bottom: 3em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #282828;
+}
+
+.post-preview:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.post-preview h2 a {
+    color: #fff;
+}
+.post-preview h2 a:hover {
+    color: #eee;
+    text-decoration: none;
+}
+
+.post-meta {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+}
+
+.post-preview-content p:last-child {
+    margin-bottom: 0;
+}
+
+.post-content img,
+.post-preview img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+    border-radius: 5px;
+}
+
+.post-title {
+    text-decoration: none;
+}
+
+pre {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 1em;
+    overflow-x: auto;
+    margin-bottom: 1.5em;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+code {
+    font-family: "JetBrains", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    background-color: #282828;
+    color: #f0c674;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: inherit;
+    font-size: inherit;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+}
+th, td {
+    border: 1px solid #444;
+    padding: 0.6em 0.8em;
+    text-align: left;
+}
+th {
+    background-color: #222;
+    color: #fff;
+    font-family: "JetBrains", monospace;
+}
+tr:nth-child(even) {
+    background-color: #111;
+}
+
+form {
+    margin-bottom: 1.5em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.2em;
+    border: 1px solid #555;
+    background-color: #181818;
+    color: #e0e0e0;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #7fdbff;
+    background-color: #222;
+}
+
+textarea {
+    min-height: 200px;
+    font-family: inherit;
+    line-height: 1.6;
+}
+
+button, input[type="submit"] {
+    font-family: "JetBrains", monospace;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    display: inline-block;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #444;
+}
+
+button:active, input[type="submit"]:active {
+    background-color: #555;
+    transform: scale(0.98);
+}
+
+button, input[type="submit"], a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.flash-messages {
+    margin-bottom: 1.5em;
+}
+.flash {
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.flash.success {
+    color: #d1e7dd; background-color: #0a3622; border-color: #1a4d35;
+}
+.flash.danger {
+    color: #f8d7da; background-color: #58151c; border-color: #842029;
+}
+.flash.warning {
+    color: #fff3cd; background-color: #4d3803; border-color: #806210;
+}
+.flash.info {
+    color: #cff4fc; background-color: #052c65; border-color: #0e448c;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 2rem 1rem 1.5rem;
+    margin-top: 3rem;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+.share-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 1.5rem;
+}
+
+.share {
+    width: 50px;
+    height: 50px;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.share:hover {
+    background-color: #333;
+    transform: scale(1.15);
+}
+
+.share:active {
+    transform: scale(0.95);
+}
+
+.share-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share-logo {
+    width: 60%;
+    height: auto;
+    filter: grayscale(50%) brightness(1.5);
+    transition: filter 0.3s ease;
+}
+.share:hover .share-logo {
+    filter: grayscale(0%) brightness(1);
+}
+
+.copyright {
+    color: #777;
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+}
+
+.disabled {
+    pointer-events: none;
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+}
+
+@media (max-width: 992px) {
+    .content {
+        max-width: 720px;
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    .header {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    .logo {
+        max-width: 120px;
+    }
+    .main-nav ul li {
+        margin: 0 0.5rem;
+    }
+    .content {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    .share {
+        width: 45px;
+        height: 45px;
+    }
+    .share-logo {
+        width: 55%;
+    }
+    pre {
+        font-size: 0.85rem;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem 0.8rem;
+    }
+    .logo {
+        max-width: 100px;
+    }
+    .main-nav {
+        padding: 0.4rem 0.8rem;
+    }
+     .main-nav ul li a {
+        font-size: 0.9rem;
+    }
+    .content {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0 0.8rem;
+    }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.3rem; }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="file"],
+    textarea,
+    button, input[type="submit"] {
+        font-size: 0.95rem;
+        padding: 0.7em 1.2em;
+    }
+}
