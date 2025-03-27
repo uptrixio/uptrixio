@@ -19,9 +19,12 @@ class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(140))
     slug = db.Column(db.String(140), unique=True, index=True)
-    markdown_content = db.Column(db.Text)
+    markdown_content = db.Column(db.Text, nullable=True)
     image_filename = db.Column(db.String(128), nullable=True)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+
+    views = db.Column(db.Integer, default=0)
+    likes = db.Column(db.Integer, default=0)
 
     def __repr__(self):
         return f'<Post {self.title}>'
