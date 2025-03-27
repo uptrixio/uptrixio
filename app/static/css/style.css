@@ -496,14 +496,18 @@ button, input[type="submit"], a {
     }
 
     .post-meta-extra {
-        gap: 0.3rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 1rem;
         font-size: 0.85rem;
+        margin-bottom: 1.2em;
     }
-    
+
     .post-stats {
         gap: 0.8rem;
-        margin-left: 0;
-        margin-top: 0.3rem;
+        white-space: nowrap;
     }
 
     .like-button {
@@ -531,16 +535,20 @@ button, input[type="submit"], a {
     .header {
         padding: 0.6rem 1rem;
     }
+
     .logo {
         max-width: 100px;
     }
+
     .main-nav {
         padding: 0.4rem 0.5rem;
     }
+
      .main-nav ul li a {
         font-size: 0.9rem;
         padding: 0.3rem 0.4rem;
     }
+
     .content {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -551,6 +559,7 @@ button, input[type="submit"], a {
         margin-top: 1.2em;
         margin-bottom: 1em;
     }
+
     h1:not(.page-title) {
         margin-top: 1.5em;
     }
@@ -567,7 +576,16 @@ button, input[type="submit"], a {
         padding: 0.7em 1.0em;
     }
 
-     .post-preview {
+    .post-preview {
         margin-bottom: 2em;
+    }
+
+    .post-meta-extra {
+        gap: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .post-stats {
+        gap: 0.6rem;
     }
 }
