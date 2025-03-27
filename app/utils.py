@@ -38,7 +38,7 @@ async def send_telegram_otp(otp_code):
 
     try:
         bot = telegram.Bot(token=token)
-        message = f"Ваш код для входа на uptrixio.onrender.com:  `{otp_code}`\nКод действителен 5 минут\\."
+        message = f"Ваш код для входа на uptrixio\\.onrender\\.com:  `{otp_code}`\nКод действителен 5 минут\\."
 
         await bot.send_message(chat_id=chat_id, text=message, parse_mode=ParseMode.MARKDOWN_V2)
 
