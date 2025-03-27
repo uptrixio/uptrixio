@@ -1,8 +1,8 @@
-"""Add views and likes to Post model
+"""Initial migration
 
-Revision ID: 6f920840c292
+Revision ID: c03930cdaaaf
 Revises: 
-Create Date: 2025-03-27 19:29:21.197883
+Create Date: 2025-03-27 18:09:41.034160
 
 """
 from alembic import op
@@ -25,8 +25,6 @@ def upgrade():
     sa.Column('markdown_content', sa.Text(), nullable=True),
     sa.Column('image_filename', sa.String(length=128), nullable=True),
     sa.Column('timestamp', sa.DateTime(), nullable=True),
-    sa.Column('views', sa.Integer(), nullable=True),
-    sa.Column('likes', sa.Integer(), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
     with op.batch_alter_table('post', schema=None) as batch_op:
