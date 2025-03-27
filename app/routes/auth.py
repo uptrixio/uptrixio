@@ -103,4 +103,4 @@ def verify_otp():
 def logout():
     logout_user()
     flash('Вы вышли из системы.', 'info')
-    return redirect(url_for('main.index'))
+    return redirect("/")
