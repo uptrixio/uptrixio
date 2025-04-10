@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="page-title">Latest posts</h1>
+    {% if posts %}
+        {% for p in posts %}
+            <article class="post-preview">
+                <h2><a href="{{ url_for('main.view_post', slug=p.slug) }}">{{ p.title }}</a></h2>
+                <div class="post-meta-extra">
+                    <span class="post-meta">Published: {{ p.timestamp.strftime('%d-%m-%Y %H:%M') }}</span>
+                     <span class="post-stats">
+                            <span class="stat-item views-count" title="Views">
+                                👁️ {{ p.views or 0 }}
+                            </span>
+                            <span class="stat-item likes-count" title="Likes">
+                               ❤️ {{ p.likes or 0 }}
+                            </span>
+                        </span>
+                </div>
+
+                {% if p.preview_html %}
+                    <div class="post-preview-content">
+                        {{ p.preview_html | safe }}
+                    </div>
+                {% endif %}
+
+                <p style="clear: both; margin-top: 1em;">
+                    <a href="{{ url_for('main.view_post', slug=p.slug) }}">Read more =></a>
+                </p>
+            </article>
+        {% endfor %}
+    {% else %}
+        <p>There are no posts here yet</p>
+    {% endif %}
+{% endblock %}
