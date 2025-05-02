@@ -1,16 +1,23 @@
-## Hi there 👋
+---
+title: Привет, я uptrix 👋
+---
 
-<!--
-**uptrixio/uptrixio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Занимаюсь Python, люблю видеомонтаж и копаюсь в душевных темах.
 
-Here are some ideas to get you started:
+## 🚀 Чем занимаюсь:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+-  Пишу на Python
+
+-  Изучаю новые технологии
+
+-  Делаю проекты для души
+
+## 📊 Статистика
+
+[http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=uptrixio&theme=](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={username}&theme={theme_name})2077
+
+## 🔗 Ссылки
+
+-  [YouTube](https://youtube.com/...)
+
+-  [Telegram](https://t.me/...)
