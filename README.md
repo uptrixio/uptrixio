@@ -2,6 +2,3 @@
 {}
 ---
 
-![](./README.webp){width=512px height=512px}
-
-
