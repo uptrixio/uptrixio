@@ -2,6 +2,6 @@
 {}
 ---
 
-[duck.webp](./duck.webp)
+![](./README.webp){width=512px height=512px}
 
 
