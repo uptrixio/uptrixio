@@ -14,7 +14,7 @@ title: Привет, я uptrix 👋
 
 ## 📊 Статистика
 
-[http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=uptrixio&theme=](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={username}&theme={theme_name})2077
+[http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=uptrix&theme=2077](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={username}&theme={theme_name})
 
 ## 🔗 Ссылки
 
