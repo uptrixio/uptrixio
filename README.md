@@ -2,6 +2,3 @@
 {}
 ---
 
-```python
-print("Hello World")
-```
