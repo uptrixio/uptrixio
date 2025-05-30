@@ -2,3 +2,6 @@
 {}
 ---
 
+```python
+print("Hello World")
+```
