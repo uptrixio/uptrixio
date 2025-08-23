@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=uptrix&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=ffffff" />
+</p>
+
 # 👋 Hi there, I'm Timur (aka uptrix)
 
 ### 💻 Python & JavaScript Developer | 🎨 Designer | 🤖 Bot & Web Developer | 🐧 Arch Linux enjoyer
