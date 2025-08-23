@@ -1,14 +1,15 @@
 # 👋 Hi there, I'm Timur (aka uptrix)
 
-### 💻 Python Developer | 🎬 Video Editing Enthusiast | 🌍 From Cheboksary, Russia
+### 💻 Python & JavaScript Developer | 🎨 Designer | 🤖 Bot & Web Developer | 🐧 Arch Linux enjoyer
 
 ---
 
 ## 🚀 About Me
-- 🔭 Currently working on **Python projects**
-- 🎥 Occasionally doing some video editing
-- 🌱 Always learning and improving in tech
-- 🧠 Love deep talks about life, philosophy, and personal growth
+- 🔭 Currently working on **Python, JavaScript, and Web projects**
+- 🎨 Passionate about **design** and creative coding
+- 🤖 Love building **bots** and automating stuff
+- 🐧 Living on the edge with **Arch Linux**
+- 🌱 Always learning and improving my craft
 
 ---
 
@@ -19,15 +20,18 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=uptrixio&theme=tokyonight&hide_border=true" height="165"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=uptrixio&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
-</p>
-
 ---
 
 ## 🛠️ Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,git,github,vscode,linux" />
+  <img src="https://skillicons.dev/icons?i=python,javascript,git,github,vscode,linux,arch" />
+</p>
+
+---
+
+## ✨ Vibe Check
+<p align="center">
+  <img src="https://i.pinimg.com/originals/09/20/f2/0920f20b2fa70c6e7d59af4e36f2a3f4.gif" width="300"/>
 </p>
 
 ---
