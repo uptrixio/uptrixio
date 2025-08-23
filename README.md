@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=uptrix&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=ffffff" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=_mygrad&customColorList=0:4B0082,100:000000&height=200&section=header&text=uptrix&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=ffffff" />
 </p>
 
-# 👋 Hi there, I'm Timur (aka uptrix)
+# ​ Hi there, I'm Timur (aka uptrix)
 
-### 💻 Python & JavaScript Developer | 🎨 Designer | 🤖 Bot & Web Developer | 🐧 Arch Linux enjoyer
+### ​ Python & JavaScript Developer | 🎨 Designer | 🤖 Bot & Web Developer | 🐧 Arch Linux enjoyer
 
 ---
 
-## 🚀 About Me
+## ​ About Me
 - 🔭 Currently working on **Python, JavaScript, and Web projects**
 - 🎨 Passionate about **design** and creative coding
 - 🤖 Love building **bots** and automating stuff
@@ -17,7 +17,7 @@
 
 ---
 
-## 📊 GitHub Stats
+## ​ GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=uptrixio&show_icons=true&theme=tokyonight&hide_border=true" height="165"/>
@@ -26,14 +26,14 @@
 
 ---
 
-## 🛠️ Tech Stack
+## ​​ Tech Stack
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,javascript,git,github,vscode,linux,arch" />
 </p>
 
 ---
 
-## 🌐 Connect with Me
+## ​ Connect with Me
 <p align="center">
   <a href="https://github.com/uptrixio">
     <img src="https://img.shields.io/badge/GitHub-uptrixio-181717?style=for-the-badge&logo=github" />
