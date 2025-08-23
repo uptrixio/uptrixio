@@ -29,13 +29,6 @@
 
 ---
 
-## ✨ Vibe Check
-<p align="center">
-  <img src="https://i.pinimg.com/originals/09/20/f2/0920f20b2fa70c6e7d59af4e36f2a3f4.gif" width="300"/>
-</p>
-
----
-
 ## 🌐 Connect with Me
 <p align="center">
   <a href="https://github.com/uptrixio">
@@ -45,7 +38,3 @@
     <img src="https://img.shields.io/badge/Telegram-uptrix-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
   </a>
 </p>
-
----
-
-⭐️ From [uptrixio](https://github.com/uptrixio)
